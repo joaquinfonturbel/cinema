@@ -1,0 +1,248 @@
+body {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    overflow-x: hidden; 
+}
+
+.nombre {
+    color: red;
+}
+
+.inicio {
+    height: 50vh;
+    margin-top: 15rem;
+}
+
+img {
+    border-radius: 25px;
+    width: 300px;
+    height: 300px;
+}
+#search-bar {
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    align-items: center;
+    justify-content: center;
+    top: -50px;
+    right: 20px; 
+  }
+.img-fluid {
+    transition: transform 0.3s ease;
+}
+
+.img-fluid:hover {
+    transform: scale(1.1);
+}
+
+.progress {
+    width: 75%;
+}
+
+.sectioncontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.sobremi {
+    padding-left: 1rem;
+}
+
+.Skills {
+    padding-left: 1rem;
+}
+
+.section {
+background-color: #F0F0F0;
+text-align: center;
+}
+
+.color{
+    background-color: #F0F0F0;
+}
+@media (min-width: 768px) {
+    .sobremi,
+    .Skills {
+        padding-left: 15rem;
+        text-align: center;
+    }
+}
+
+.peliculas {
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    align-items: center;   
+    text-align: center;
+}
+.card {
+    margin-bottom: 1rem;
+}
+
+/* Animación al cargar la página */
+body.loaded {
+    opacity: 1;
+}
+
+.Skills .progress-bar {
+    width: 0;
+    transition: width 1s ease;
+}
+
+.form {
+    text-align: center;
+}
+
+.contact-form {
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group input[type="submit"] {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 12px 20px;
+    border-radius: 4px;
+}
+
+.form-group input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.main-footer {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.main-footer .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-footer .footer-content .icon {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.main-footer .footer-content .icon li {
+    display: inline;
+}
+
+.main-footer .footer-content .icon li a img {
+    width: 24px;
+    height: 24px;
+}
+
+.main-footer .footer-content p.copy {
+    margin: 10px 0 0;
+}
+
+@keyframes cambioColores {
+    0% { color: #FF6347; }
+    25% { color: #FFD700; }
+    50% { color: #32CD32; }
+    75% { color: #1E90FF; }
+    100% { color: #FF1493; }
+}
+
+#efecto-nombre {
+    animation: cambioColores 5s infinite;
+}
+
+.peliculasrow{
+    text-align: center;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  /* Alinea todos los elementos verticalmente al centro */
+    padding: 10px 20px;
+    background-color: #f8f9fa; /* Fondo claro */
+  }
+  
+  .logo h1 {
+    margin: 10px;
+    font-size: 24px;
+  }
+  
+  .menu {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Espacio entre los enlaces del menú */
+  }
+  
+  .menu li {
+    display: inline-block;
+  }
+  
+  .menu li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+  }
+  
+  .search-bar {
+    /* Estilo y alineación del campo de búsqueda */
+    display: flex;
+    align-items: center; /* Alinea el input en el centro verticalmente */
+  }
+  
+  #search-bar {
+    padding: 20px 15px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    width: 250px;
+    transition: all 0.3s ease;
+  }
+  
+  /* Añade un borde y una sombra al hacer foco */
+  #search-bar:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
